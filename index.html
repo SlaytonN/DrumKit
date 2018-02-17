@@ -9,64 +9,82 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container drums keys">
-    <div class="row keys1">
-      <div class="col">
-        <div data-key="65" class="key">
-          <kbd>A</kbd>
-          <span class="sound">CLAP</span>
-        </div>
-      </div>
-      <div class="col">
-        <div data-key="83" class="key">
-          <kbd>S</kbd>
-          <span class="sound">HIHAT</span>
-        </div>
-      </div>
-      <div class="col">
-        <div data-key="68" class="key">
-          <kbd>D</kbd>
-          <span class="sound">KICK</span>
-        </div>
-      </div>
+
+  <!--Drums Modal Button-->
+  <div class="container">
+    <div class="row">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#drums">Drum Kit</button>
     </div>
-    <div class="row keys2">
-      <div class="col">
-        <div data-key="70" class="key">
-          <kbd>F</kbd>
-          <span class="sound">OPENHAT</span>
+  </div>
+  <!--Drums Modal-->
+  <div class="modal fade" id="drums" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Drum Kit</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-      </div>
-      <div class="col">
-        <div data-key="71" class="key">
-          <kbd>G</kbd>
-          <span class="sound">BASS</span>
-        </div>
-      </div>
-      <div class="col">
-        <div data-key="72" class="key">
-          <kbd>H</kbd>
-          <span class="sound">RIDE</span>
-        </div>
-      </div>
-    </div>
-    <div class="row keys3">
-      <div class="col">
-        <div data-key="74" class="key">
-          <kbd>J</kbd>
-          <span class="sound">SNARE</span>
-        </div>
-      </div>
-      <div class="col">
-        <div data-key="75" class="key">
-          <kbd>K</kbd>
-          <span class="sound">TOM</span>
-        </div>
-      </div>
-      <div class="col">
-        <div data-key="76" class="key">
-          <kbd>L</kbd>
-          <span class="sound">TINK</span>
+        <div class="modal-body">
+          <div class="row keys1">
+            <div class="col">
+                <div data-key="65" class="key">
+                  <kbd>A</kbd>
+                  <span class="sound">CLAP</span>
+                </div>
+            </div>
+            <div class="col">
+              <div data-key="83" class="key">
+                <kbd>S</kbd>
+                <span class="sound">HIHAT</span>
+              </div>
+            </div>
+            <div class="col">
+              <div data-key="68" class="key">
+                <kbd>D</kbd>
+                <span class="sound">KICK</span>
+              </div>
+            </div>
+          </div>
+          <div class="row keys2">
+            <div class="col">
+              <div data-key="70" class="key">
+                <kbd>F</kbd>
+                <span class="sound">OPENHAT</span>
+              </div>
+            </div>
+            <div class="col">
+              <div data-key="71" class="key">
+                <kbd>G</kbd>
+                <span class="sound">BASS</span>
+              </div>
+            </div>
+            <div class="col">
+              <div data-key="72" class="key">
+                <kbd>H</kbd>
+                <span class="sound">RIDE</span>
+              </div>
+            </div>
+          </div>
+          <div class="row keys3">
+            <div class="col">
+              <div data-key="74" class="key">
+                <kbd>J</kbd>
+                <span class="sound">SNARE</span>
+              </div>
+            </div>
+            <div class="col">
+              <div data-key="75" class="key">
+                <kbd>K</kbd>
+                <span class="sound">TOM</span>
+              </div>
+            </div>
+            <div class="col">
+              <div data-key="76" class="key">
+                <kbd>L</kbd>
+                <span class="sound">TINK</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -82,8 +100,12 @@
   <audio data-key="75" src="sounds\tom.wav"></audio>
   <audio data-key="76" src="sounds\tink.wav"></audio>
 
-
+<script type="text/javascript" src="node_modules\tether\dist\js\tether.js"></script>
+<script type="text/javascript" src="node_modules\jquery\dist\jquery.js"></script>
+<script type="text/javascript" src="scripts\bootstrap.js"></script>
+<script type="text/javascript" src="scripts\modal.js"></script>
 <script type="text/javascript" src="scripts\scripts.js"></script>
+
 
 
 </body>
